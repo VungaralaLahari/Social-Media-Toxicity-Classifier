@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+emoji
+nltk
+scikit-learn
+imbalanced-learn
+joblib
