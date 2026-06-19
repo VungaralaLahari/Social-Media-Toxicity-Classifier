@@ -1,6 +1,6 @@
 # Social Media Toxicity Classifier
 
-Content moderation at scale is a real problem. Platforms like YouTube and Reddit receive millions of comments daily — manual review doesn't scale. This project builds a two-stage ML pipeline that detects whether a comment is toxic, and if yes, identifies what kind.
+Content moderation at scale is a real problem. Platforms like YouTube and Reddit receive millions of comments daily - manual review doesn't scale. This project builds a two-stage ML pipeline that detects whether a comment is toxic, and if yes, identifies what kind.
 
  ---
  
@@ -18,7 +18,7 @@ Built a Streamlit app where you paste any comment and instantly get the verdict,
 
 ## Dataset
 
-Jigsaw Toxic Comment Classification (Kaggle) — 159,571 Wikipedia comments with 6 toxicity labels. Multi-label, meaning one comment can belong to multiple categories simultaneously.
+Jigsaw Toxic Comment Classification (Kaggle) - 159,571 Wikipedia comments with 6 toxicity labels. Multi-label, meaning one comment can belong to multiple categories simultaneously.
 
 Key stat: 89.8% of comments are clean, 10.2% toxic. Severe class imbalance from the start.
 
@@ -101,7 +101,7 @@ Python, Pandas, NumPy, NLTK, Scikit-learn, Imbalanced-learn, Streamlit, Joblib
 
 ```bash
 toxicity-classifier/
-├── Toxicity_Classifier_Notebook.ipynb
+├── Social_Media_Toxicity_Classifier_Notebook.ipynb
 ├── app.py
 ├── tfidf.pkl
 ├── binary_model.pkl
@@ -125,5 +125,7 @@ streamlit run app.py
 Replace TF-IDF with DistilBERT embeddings. TF-IDF treats "I love this" and "I love hurting this" almost identically. Context matters for toxicity and transformers handle it better.
 
 Collect more samples for threat and identity_hate categories. These labels have the weakest performance purely because of data scarcity.
+
+---
 
 **Vungarala Lahari**
